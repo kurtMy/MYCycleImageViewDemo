@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		6C3184A11F5F977000D8026D /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C3184A01F5F977000D8026D /* NextViewController.m */; };
-		6C3184A41F5FA25000D8026D /* HWWeakTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C3184A31F5FA25000D8026D /* HWWeakTimer.m */; };
 		6C5A4FF51F5E9DED00B22B74 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C5A4FF41F5E9DED00B22B74 /* main.m */; };
 		6C5A4FF81F5E9DED00B22B74 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C5A4FF71F5E9DED00B22B74 /* AppDelegate.m */; };
 		6C5A4FFB1F5E9DED00B22B74 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C5A4FFA1F5E9DED00B22B74 /* ViewController.m */; };
@@ -17,13 +16,14 @@
 		6C5A50031F5E9DED00B22B74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C5A50011F5E9DED00B22B74 /* LaunchScreen.storyboard */; };
 		6C5A500E1F5E9DED00B22B74 /* MYCycleImageViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C5A500D1F5E9DED00B22B74 /* MYCycleImageViewTests.m */; };
 		6C5A50191F5E9DED00B22B74 /* MYCycleImageViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C5A50181F5E9DED00B22B74 /* MYCycleImageViewUITests.m */; };
-		6C5A50281F5E9E1C00B22B74 /* MYCycleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C5A50271F5E9E1C00B22B74 /* MYCycleView.m */; };
 		6C5A502F1F5EA07200B22B74 /* home_banner01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C5A50291F5EA07200B22B74 /* home_banner01@2x.png */; };
 		6C5A50301F5EA07200B22B74 /* home_banner01@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C5A502A1F5EA07200B22B74 /* home_banner01@3x.png */; };
 		6C5A50311F5EA07200B22B74 /* home_banner02@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C5A502B1F5EA07200B22B74 /* home_banner02@2x.png */; };
 		6C5A50321F5EA07200B22B74 /* home_banner02@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C5A502C1F5EA07200B22B74 /* home_banner02@3x.png */; };
 		6C5A50331F5EA07200B22B74 /* home_banner03@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C5A502D1F5EA07200B22B74 /* home_banner03@2x.png */; };
 		6C5A50341F5EA07200B22B74 /* home_banner03@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C5A502E1F5EA07200B22B74 /* home_banner03@3x.png */; };
+		6CA28AB81F60071D002B55B2 /* HWWeakTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA28AB51F60071D002B55B2 /* HWWeakTimer.m */; };
+		6CA28AB91F60071D002B55B2 /* MYCycleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA28AB71F60071D002B55B2 /* MYCycleView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,8 +46,6 @@
 /* Begin PBXFileReference section */
 		6C31849F1F5F977000D8026D /* NextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NextViewController.h; sourceTree = "<group>"; };
 		6C3184A01F5F977000D8026D /* NextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NextViewController.m; sourceTree = "<group>"; };
-		6C3184A21F5FA25000D8026D /* HWWeakTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWWeakTimer.h; sourceTree = "<group>"; };
-		6C3184A31F5FA25000D8026D /* HWWeakTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWWeakTimer.m; sourceTree = "<group>"; };
 		6C5A4FF01F5E9DED00B22B74 /* MYCycleImageView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MYCycleImageView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C5A4FF41F5E9DED00B22B74 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6C5A4FF61F5E9DED00B22B74 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -64,14 +62,16 @@
 		6C5A50141F5E9DED00B22B74 /* MYCycleImageViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MYCycleImageViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C5A50181F5E9DED00B22B74 /* MYCycleImageViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYCycleImageViewUITests.m; sourceTree = "<group>"; };
 		6C5A501A1F5E9DED00B22B74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6C5A50261F5E9E1C00B22B74 /* MYCycleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYCycleView.h; sourceTree = "<group>"; };
-		6C5A50271F5E9E1C00B22B74 /* MYCycleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYCycleView.m; sourceTree = "<group>"; };
 		6C5A50291F5EA07200B22B74 /* home_banner01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_banner01@2x.png"; sourceTree = "<group>"; };
 		6C5A502A1F5EA07200B22B74 /* home_banner01@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_banner01@3x.png"; sourceTree = "<group>"; };
 		6C5A502B1F5EA07200B22B74 /* home_banner02@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_banner02@2x.png"; sourceTree = "<group>"; };
 		6C5A502C1F5EA07200B22B74 /* home_banner02@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_banner02@3x.png"; sourceTree = "<group>"; };
 		6C5A502D1F5EA07200B22B74 /* home_banner03@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_banner03@2x.png"; sourceTree = "<group>"; };
 		6C5A502E1F5EA07200B22B74 /* home_banner03@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_banner03@3x.png"; sourceTree = "<group>"; };
+		6CA28AB41F60071D002B55B2 /* HWWeakTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWWeakTimer.h; sourceTree = "<group>"; };
+		6CA28AB51F60071D002B55B2 /* HWWeakTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWWeakTimer.m; sourceTree = "<group>"; };
+		6CA28AB61F60071D002B55B2 /* MYCycleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYCycleView.h; sourceTree = "<group>"; };
+		6CA28AB71F60071D002B55B2 /* MYCycleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYCycleView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,10 +128,10 @@
 				6C5A4FFA1F5E9DED00B22B74 /* ViewController.m */,
 				6C31849F1F5F977000D8026D /* NextViewController.h */,
 				6C3184A01F5F977000D8026D /* NextViewController.m */,
-				6C5A50261F5E9E1C00B22B74 /* MYCycleView.h */,
-				6C5A50271F5E9E1C00B22B74 /* MYCycleView.m */,
-				6C3184A21F5FA25000D8026D /* HWWeakTimer.h */,
-				6C3184A31F5FA25000D8026D /* HWWeakTimer.m */,
+				6CA28AB41F60071D002B55B2 /* HWWeakTimer.h */,
+				6CA28AB51F60071D002B55B2 /* HWWeakTimer.m */,
+				6CA28AB61F60071D002B55B2 /* MYCycleView.h */,
+				6CA28AB71F60071D002B55B2 /* MYCycleView.m */,
 				6C5A4FFC1F5E9DED00B22B74 /* Main.storyboard */,
 				6C5A4FFF1F5E9DED00B22B74 /* Assets.xcassets */,
 				6C5A50011F5E9DED00B22B74 /* LaunchScreen.storyboard */,
@@ -315,12 +315,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C3184A41F5FA25000D8026D /* HWWeakTimer.m in Sources */,
 				6C3184A11F5F977000D8026D /* NextViewController.m in Sources */,
 				6C5A4FFB1F5E9DED00B22B74 /* ViewController.m in Sources */,
-				6C5A50281F5E9E1C00B22B74 /* MYCycleView.m in Sources */,
 				6C5A4FF81F5E9DED00B22B74 /* AppDelegate.m in Sources */,
+				6CA28AB81F60071D002B55B2 /* HWWeakTimer.m in Sources */,
 				6C5A4FF51F5E9DED00B22B74 /* main.m in Sources */,
+				6CA28AB91F60071D002B55B2 /* MYCycleView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

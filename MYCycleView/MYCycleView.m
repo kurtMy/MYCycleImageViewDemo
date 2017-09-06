@@ -169,12 +169,7 @@
 #pragma mark - 自动滚动
 - (void) autoScroll {
     NSLog(@"123321");
-    if (self.second < 0) {
-        [self.scroll setContentOffset:CGPointMake(0, 0) animated:YES];
-    }else {
-        [self.scroll setContentOffset:CGPointMake(2 * kwidth, 0) animated:YES];
-    }
-    
+    [self.scroll setContentOffset:CGPointMake(2 * kwidth, 0) animated:YES];
     
 }
 
@@ -199,9 +194,9 @@
 }
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
 //    这里不建议使用 [self.timer setinvalidateDate:[NSDate distantPast]]方法
-    if (self.second != 0) {
-        NSTimeInterval interval = ABS(self.second);
-        self.timer = [HWWeakTimer scheduledTimerWithTimeInterval:interval target:self selector:@selector(autoScroll) userInfo:nil repeats:YES];
+    if (self.second > 0) {
+        
+        self.timer = [HWWeakTimer scheduledTimerWithTimeInterval:self.second target:self selector:@selector(autoScroll) userInfo:nil repeats:YES];
         [[NSRunLoop mainRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
     }
         
