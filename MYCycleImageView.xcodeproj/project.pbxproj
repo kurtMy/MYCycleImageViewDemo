@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C07578E1F60E5AF002A0711 /* HWWeakTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C07578B1F60E5AF002A0711 /* HWWeakTimer.m */; };
+		6C07578F1F60E5AF002A0711 /* MYCycleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C07578D1F60E5AF002A0711 /* MYCycleView.m */; };
 		6C3184A11F5F977000D8026D /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C3184A01F5F977000D8026D /* NextViewController.m */; };
 		6C5A4FF51F5E9DED00B22B74 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C5A4FF41F5E9DED00B22B74 /* main.m */; };
 		6C5A4FF81F5E9DED00B22B74 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C5A4FF71F5E9DED00B22B74 /* AppDelegate.m */; };
@@ -22,8 +24,6 @@
 		6C5A50321F5EA07200B22B74 /* home_banner02@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C5A502C1F5EA07200B22B74 /* home_banner02@3x.png */; };
 		6C5A50331F5EA07200B22B74 /* home_banner03@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C5A502D1F5EA07200B22B74 /* home_banner03@2x.png */; };
 		6C5A50341F5EA07200B22B74 /* home_banner03@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C5A502E1F5EA07200B22B74 /* home_banner03@3x.png */; };
-		6CA28AB81F60071D002B55B2 /* HWWeakTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA28AB51F60071D002B55B2 /* HWWeakTimer.m */; };
-		6CA28AB91F60071D002B55B2 /* MYCycleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA28AB71F60071D002B55B2 /* MYCycleView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +44,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6C07578A1F60E5AF002A0711 /* HWWeakTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWWeakTimer.h; sourceTree = "<group>"; };
+		6C07578B1F60E5AF002A0711 /* HWWeakTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWWeakTimer.m; sourceTree = "<group>"; };
+		6C07578C1F60E5AF002A0711 /* MYCycleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYCycleView.h; sourceTree = "<group>"; };
+		6C07578D1F60E5AF002A0711 /* MYCycleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYCycleView.m; sourceTree = "<group>"; };
 		6C31849F1F5F977000D8026D /* NextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NextViewController.h; sourceTree = "<group>"; };
 		6C3184A01F5F977000D8026D /* NextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NextViewController.m; sourceTree = "<group>"; };
 		6C5A4FF01F5E9DED00B22B74 /* MYCycleImageView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MYCycleImageView.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,10 +72,6 @@
 		6C5A502C1F5EA07200B22B74 /* home_banner02@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_banner02@3x.png"; sourceTree = "<group>"; };
 		6C5A502D1F5EA07200B22B74 /* home_banner03@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_banner03@2x.png"; sourceTree = "<group>"; };
 		6C5A502E1F5EA07200B22B74 /* home_banner03@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_banner03@3x.png"; sourceTree = "<group>"; };
-		6CA28AB41F60071D002B55B2 /* HWWeakTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWWeakTimer.h; sourceTree = "<group>"; };
-		6CA28AB51F60071D002B55B2 /* HWWeakTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWWeakTimer.m; sourceTree = "<group>"; };
-		6CA28AB61F60071D002B55B2 /* MYCycleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYCycleView.h; sourceTree = "<group>"; };
-		6CA28AB71F60071D002B55B2 /* MYCycleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYCycleView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +99,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C0757891F60E5AF002A0711 /* MYCycleView */ = {
+			isa = PBXGroup;
+			children = (
+				6C07578A1F60E5AF002A0711 /* HWWeakTimer.h */,
+				6C07578B1F60E5AF002A0711 /* HWWeakTimer.m */,
+				6C07578C1F60E5AF002A0711 /* MYCycleView.h */,
+				6C07578D1F60E5AF002A0711 /* MYCycleView.m */,
+			);
+			path = MYCycleView;
+			sourceTree = "<group>";
+		};
 		6C5A4FE71F5E9DED00B22B74 = {
 			isa = PBXGroup;
 			children = (
@@ -122,16 +133,13 @@
 		6C5A4FF21F5E9DED00B22B74 /* MYCycleImageView */ = {
 			isa = PBXGroup;
 			children = (
+				6C0757891F60E5AF002A0711 /* MYCycleView */,
 				6C5A4FF61F5E9DED00B22B74 /* AppDelegate.h */,
 				6C5A4FF71F5E9DED00B22B74 /* AppDelegate.m */,
 				6C5A4FF91F5E9DED00B22B74 /* ViewController.h */,
 				6C5A4FFA1F5E9DED00B22B74 /* ViewController.m */,
 				6C31849F1F5F977000D8026D /* NextViewController.h */,
 				6C3184A01F5F977000D8026D /* NextViewController.m */,
-				6CA28AB41F60071D002B55B2 /* HWWeakTimer.h */,
-				6CA28AB51F60071D002B55B2 /* HWWeakTimer.m */,
-				6CA28AB61F60071D002B55B2 /* MYCycleView.h */,
-				6CA28AB71F60071D002B55B2 /* MYCycleView.m */,
 				6C5A4FFC1F5E9DED00B22B74 /* Main.storyboard */,
 				6C5A4FFF1F5E9DED00B22B74 /* Assets.xcassets */,
 				6C5A50011F5E9DED00B22B74 /* LaunchScreen.storyboard */,
@@ -316,11 +324,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C3184A11F5F977000D8026D /* NextViewController.m in Sources */,
+				6C07578F1F60E5AF002A0711 /* MYCycleView.m in Sources */,
 				6C5A4FFB1F5E9DED00B22B74 /* ViewController.m in Sources */,
 				6C5A4FF81F5E9DED00B22B74 /* AppDelegate.m in Sources */,
-				6CA28AB81F60071D002B55B2 /* HWWeakTimer.m in Sources */,
 				6C5A4FF51F5E9DED00B22B74 /* main.m in Sources */,
-				6CA28AB91F60071D002B55B2 /* MYCycleView.m in Sources */,
+				6C07578E1F60E5AF002A0711 /* HWWeakTimer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

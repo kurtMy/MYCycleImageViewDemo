@@ -45,12 +45,6 @@
         
         [self addSubview:self.scroll];
 
-        [self.scroll addSubview:self.LeftImageView];
-
-        
-        [self.scroll addSubview:self.centerImageView];
-
-        [self.scroll addSubview:self.rightImageView];
 
         self.pageControl=[[UIPageControl alloc]initWithFrame:CGRectMake((kwidth - 60)/2, kheight - 20, 60, 20)];
         self.pageControl.currentPageIndicatorTintColor=[UIColor whiteColor];
@@ -238,7 +232,7 @@
 
 - (UIImageView *)rightImageView {
     if (!_rightImageView) {
-        _rightImageView = [[UIImageView alloc] initWithFrame:CGRectMake(2*kwidth, 0, kwidth, kheight)];
+        _rightImageView = [[UIImageView alloc] initWithFrame:CGRectMake(2 * kwidth, 0, kwidth, kheight)];
         [_rightImageView.layer setMasksToBounds:YES];
         _rightImageView.contentMode = UIViewContentModeScaleAspectFill;
 
@@ -259,6 +253,12 @@
         _scroll.delegate=self;
         _scroll.contentOffset=CGPointMake(kwidth, 0);
         _scroll.contentSize=CGSizeMake(kwidth*3, 0);
+        
+        [_scroll addSubview:self.LeftImageView];
+        
+        [_scroll addSubview:self.centerImageView];
+        
+        [_scroll addSubview:self.rightImageView];
     }
     
     return _scroll;
