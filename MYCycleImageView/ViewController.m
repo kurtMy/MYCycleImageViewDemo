@@ -23,7 +23,7 @@
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
 //    开始轮播
-    self.cycleView.second = 3;
+    self.cycleView.second = -3;
 }
 
 - (void)viewDidDisappear:(BOOL)animated {
@@ -39,7 +39,7 @@
 //    当imageArray.cout为1时，不轮播，相当于imageView;
     self.cycleView.imageArray = @[@"home_banner01",@"home_banner02",@"home_banner03"];
 //    设置轮播时间，小于0时逆向，大于0时正向，等于0是不自动轮播
-    self.cycleView.second = 3;
+    self.cycleView.second = -3;
 ////    设置pageControl未选中indicator的颜色
 //    self.cycleView.pageIndicatorColor = [UIColor grayColor];
 ////    设置pageControl当前indicator的颜色
@@ -58,6 +58,8 @@
     [btn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     [btn addTarget:self action:@selector(nextController) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
+    
+    
     
     
  

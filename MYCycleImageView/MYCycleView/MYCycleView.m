@@ -139,9 +139,9 @@
 
         return;
     }
-        NSString *curruntImageName=[NSString stringWithString:array[currentIndex]];
+        NSString *currentImageName=[NSString stringWithString:array[currentIndex]];
         
-        self.centerImageView.image = [UIImage imageNamed:curruntImageName];
+        self.centerImageView.image = [UIImage imageNamed:currentImageName];
         self.centerImageView.tag = currentIndex;
         self.centerImageView.userInteractionEnabled = YES;
         [self.centerImageView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(imgViewClick:)]];
@@ -163,17 +163,18 @@
 #pragma mark - 自动滚动
 - (void) autoScroll {
     NSLog(@"123321");
-    [self.scroll setContentOffset:CGPointMake(2 * kwidth, 0) animated:YES];
+    if (self.second > 0) {
+       [self.scroll setContentOffset:CGPointMake(2 * kwidth, 0) animated:YES];
+    }else {
+        [self.scroll setContentOffset:CGPointMake(0, 0) animated:YES];
+    }
+    
     
 }
 
 
 #pragma mark ----UIScrollViewDelegate代理方法（停止加速时调用）
-- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
-{
-    [self refreshImage];
-    self.scroll.contentOffset = CGPointMake(kwidth,0);
-}
+
 - (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView {
     [self refreshImage];
     self.scroll.contentOffset = CGPointMake(kwidth,0);
@@ -186,11 +187,18 @@
     self.timer = nil;
     
 }
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+{
+    [self refreshImage];
+    self.scroll.contentOffset = CGPointMake(kwidth,0);
+}
+
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
 //    这里不建议使用 [self.timer setinvalidateDate:[NSDate distantPast]]方法
-    if (self.second > 0) {
-        
-        self.timer = [HWWeakTimer scheduledTimerWithTimeInterval:self.second target:self selector:@selector(autoScroll) userInfo:nil repeats:YES];
+    if (self.second != 0) {
+        NSTimeInterval interval = fabs(self.second);
+        self.timer = [HWWeakTimer scheduledTimerWithTimeInterval:interval target:self selector:@selector(autoScroll) userInfo:nil repeats:YES];
         [[NSRunLoop mainRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
     }
         
